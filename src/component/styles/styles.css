@@ -1,0 +1,23 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    color: #666;
+    background-color: #52c0f773;
+    font-family: 'Mulish', sans-serif;
+    font-size: 17px;
+    line-height: 29px;
+    overflow-x: hidden;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    cursor: pointer;
+}

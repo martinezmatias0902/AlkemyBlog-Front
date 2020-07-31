@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="../../component/styles/styles.css">
+    <link rel="stylesheet" href="../../component/styles/navbar.css">
+    <link rel="stylesheet" href="../../component/styles/createBlog.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../../../blog.html">
+                <img src="../../img/logo-alkemy.png" alt="Alkemy">
+            </a>
+            <span>Blog</span>
+        </div>
+
+
+        <input type="checkbox" id="check">
+        <label for="check" id="icon">
+            <i class="fa fa-th-large"></i>
+        </label>
+
+
+        <ul class="listaMenu">
+            <li><a class="menuChild" href="../../../blog.html">Home</a></li>
+        </ul>
+        
+    </nav>
+
+    <section class="blogCreation">
+        <div class="mainTitle">
+            <h1>Create your blog</h1>
+            <p>Tell us how was your first week</p>
+        </div>
+
+        <!-- Post section -->
+
+        <div class="createPostContainer">
+            <form id="formulario">
+                <div>
+                    <input type="text" id="title" name="title" placeholder="Title">
+                </div>
+                <div>
+                    <textarea name="text" id="text" cols="30" rows="10" placeholder="Escriba su Blog aquí..."></textarea>
+                </div>
+                <div>
+                    <input type="date" name="fecha" id="fecha">
+                </div>
+                <button id="sendPost" type="submit">Crear Blog</button>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../script/methodPost.js"></script>
+</body>
+</html>

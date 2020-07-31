@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>^^ | Alkemy Blog</title>
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="./src/component/styles/styles.css">
+    <link rel="stylesheet" href="./src/component/styles/navbar.css">
+    <link rel="stylesheet" href="./src/component/styles/mainSection.css">
+    <!-- Fonts  &  Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">
+                <img src="./src/img/logo-alkemy.png" alt="Alkemy">
+            </a>
+            <span>Blog</span>
+        </div>
+
+
+        <input type="checkbox" id="check">
+        <label for="check" id="icon">
+            <i class="fa fa-th-large"></i>
+        </label>
+
+
+        <ul class="listaMenu">
+            <li><a class="menuChild" href="#">Home</a></li>
+            <li><a class="menuChild" href="./src/component/layout/createPost.html">Create</a></li>
+            <li><a id="generateSample" href="menuChild">Generate Sample</a></li>
+        </ul>
+        
+    </nav>
+    
+    <main>
+        <section class="aside">
+            <div class="lastPostTitle">
+                <h4>Lastest Posts</h4>
+            </div>
+            <div class="lastestPost">
+                <ul class="lastPostsData">
+                    <!-- Insertar Li's con los últimos posts -->
+                    
+                </ul>
+            </div>
+            <div class="asideButtons">
+                <!-- Botones para crear un nuevo post -->
+                <a href="./src/component/layout/createPost.html">Create</a>
+                <a href="" id="getData">Get Posts</a>
+                <a href="" id="deleteAll">Delete all</a>
+            </div>
+        </section>
+
+        <section class="blogSection">
+            <div class="mainTitle">
+                <h1>Welcome Alkymer</h1>
+                <p>First Alkemy week Update</p>
+            </div>
+
+            <!-- Post section -->
+            <div class="postSection">
+                <!-- Every posted post should appears here -->
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./src/component/script/index.js"></script>
+    <script src="./src/component/script/methodDelete.js"></script>
+</body>
+</html>
+
+

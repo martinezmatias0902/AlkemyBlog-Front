@@ -1,0 +1,115 @@
+main {
+    display: flex;
+}
+
+/* Aside section */
+.aside {
+    background-color: #e2fff4;
+    height: auto;
+    min-height: 100vh;
+    position: sticky;
+    border-right: 2px solid #666;
+}
+
+.aside .lastPostTitle {
+    margin: 10% 0;
+    text-align: center;
+}
+
+.lastPostsData {
+    margin: 5px 10px;
+}
+
+.lastPostsData li {
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    border: 1px solid rgb(29, 28, 28);
+}
+.aside a {
+    padding: 4px 10px;
+    border: 1px solid black;
+    background: #58DDA6;
+    font-size: 400;
+    color: black;
+    border-radius: 5px;
+}
+
+.asideButtons {
+    margin: 5px 30px;
+}
+
+.asideButtons a {
+    width: 90%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.asideButtons a:hover {
+    background-color: #52C0F7;
+    color: white;
+}
+
+/* Blog section */
+.blogSection {
+    width: 90%;
+}
+
+.mainTitle {
+    margin: 2rem 0;
+    text-align: center;
+}
+.mainTitle h1 {
+    font-size: 40px;
+    color: black;
+    font-weight: 700;
+}
+
+.mainTitle p {
+    margin-top: 10px;
+    font-weight: 700;
+    color: #666666;
+}
+
+.postSection {
+    padding: 2rem 6rem;
+}
+
+.post {
+    margin-top: 4rem;
+    background: white;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    border-radius: 5px;
+    border-bottom: 5px solid #52C0F7;
+}
+
+.postIdyFecha {
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem;
+    font-weight: 400;
+}
+
+.postText {
+    padding: .5rem;
+    color: #666;
+    font-weight: 300;
+}
+
+.actOnPost {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 700;
+
+}
+
+.actOnPost a {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    background: #666666;
+    border-radius: 5px;
+    padding: 4px 10px;
+    color: white;
+}
