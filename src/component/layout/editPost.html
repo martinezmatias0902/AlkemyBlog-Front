@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create your Blog
-    </title>
+    <title>Edit a Blog</title>
     <!-- CSS Styles -->
     <link rel="stylesheet" href="../../component/styles/styles.css">
     <link rel="stylesheet" href="../../component/styles/navbar.css">
-    <link rel="stylesheet" href="../../component/styles/createBlog.css">
+    <link rel="stylesheet" href="../../component/styles/editBlog.css">
     <!-- Fonts  &  Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
@@ -39,8 +38,8 @@
 
     <section class="blogCreation">
         <div class="mainTitle">
-            <h1>Create your blog</h1>
-            <p>Tell us how was your first week</p>
+            <h1>BloggKeymer</h1>
+            <p>What do you need to update?</p>
         </div>
 
         <!-- Post section -->
@@ -48,15 +47,18 @@
         <div class="createPostContainer">
             <form id="formulario">
                 <div>
-                    <input type="text" id="title" name="title" placeholder="Title">
+                    <input name="idBlog" id="idBlog" type="number" placeholder="ID del Blog">
                 </div>
                 <div>
-                    <textarea name="text" id="text" cols="30" rows="10" placeholder="Escriba su Blog aquí..."></textarea>
+                    <input type="text" id="title" name="title" placeholder="Nuevo Titulo">
+                </div>
+                <div>
+                    <textarea name="text" id="text" cols="30" rows="10" placeholder="Cambios en el Blog..."></textarea>
                 </div>
                 <div>
                     <input type="date" name="fecha" id="fecha">
                 </div>
-                <button id="sendPost" type="submit">Crear Blog</button>
+                <button id="sendPost" type="submit">Editar Blog</button>
             </form>
         </div>
 
@@ -64,6 +66,6 @@
 
     <!-- Axios -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="../script/methodPost.js"></script>
+    <script src="../script/methodPut.js"></script>
 </body>
 </html>

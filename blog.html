@@ -53,6 +53,7 @@
                 <!-- Botones para crear un nuevo post -->
                 <a href="./src/component/layout/createPost.html">Create</a>
                 <a href="" id="getData">Get Posts</a>
+                <a href="./src/component/layout/editPost.html" id="GoEditBlog">Edit Post</a>
                 <a href="" id="deleteAll">Delete all</a>
             </div>
         </section>
@@ -62,6 +63,14 @@
                 <h1>Welcome Alkymer</h1>
                 <p>First Alkemy week Update</p>
             </div>
+
+            <!-- Get Post by ID -->
+            <form id="formulario">
+                <div>
+                    <input type="number" name="idBlog" id="idBlog" placeholder="Get post by ID">
+                </div>
+                <button id="getPostbyId" type="submit">Buscar Post</button>
+            </form>
 
             <!-- Post section -->
             <div class="postSection">
